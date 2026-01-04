@@ -10,7 +10,7 @@
 # n = int(input("enter a value:"))
 # for x in range(1,n+1):
 #     for i in range(1,x+1):
-#         print(2*i,end = ' ')
+#         print(i*2,end = ' ')
 #     print()
 
 
@@ -49,3 +49,34 @@
 #         break
 # if (ans == True):
 #     print("prime")
+
+
+# Q.give list of all factors of any number
+# n = int(input("enter a number:"))
+
+# factorial= []
+
+# for i in range(1 , n+1):
+#     if n% i ==0:
+#         factorial.append(i)
+
+# print("factorial is ", factorial)
+
+
+# Q. arrange all item from list in assending order
+# n = int(input("enter a number:"))
+# sum = 0
+# for i in range(1, n):
+#     if n%i == 0:
+#         sum = sum+i
+# if n == sum :
+#     print(f'given number {n} is perfect number')
+# else :
+#     print(f'given number {n} is not perfect number')
+
+
+# n= int(input("enter a number:"))
+# for i in range (1,n+1):
+#     for j in range(1,i+1):
+#         print(j,end ='')
+#     print()

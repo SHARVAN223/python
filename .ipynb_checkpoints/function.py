@@ -83,19 +83,24 @@
 # r = int(input("enter a number:"))
 # res = add(p,q,r)
 # print(res)
-
 # res = add() - error (add() missing 3 required postional arument x,y,z)
 # res = add(p)
 # res= add(p,q)
 
+
+
 # DEFAULT POSTIONAL ARGUMENT--------------------------------
 # def add(x = 0, y=0, z=0):
-#     return(x+y+z)
+
+#return(x+y+z)
 # print(add(10,20,30))
 # print(add())
 # print(add(10))
 # print(add(10,20))
 # print(add(10,20,30,40))    error--    (add() takes from 0 to 3 positional argument but 4 were given)
+
+
+
 
 # VARIABLE LENGTH POSTIONAL ARUMENT----------------------------------
 # def add(*args):
@@ -112,7 +117,6 @@
 # x = add(1,2,3,4,5,6)
 # print(x)
 
-
 # def add(*n):
 #     print(n)
 #     print(type(n))
@@ -125,7 +129,7 @@
 # x = add(*eval(input("enter a number:")))
 # print(x)
 
-# def add(*n): convet tuple to list
+# def add(*n): 
 #     li = []
 #     li.append(n)
 #     return li
@@ -141,7 +145,7 @@
 # p = int(input("enter a number:"))
 # q = int(input("enter a number:"))
 # r = int(input("enter a number:"))
-# fun_name(z = p, y = q,x = r)
+# fun_name(z = p, y = q, x = r)
 # fun_name()
 # fun_name(z = p, y = q, x = r)
 
@@ -157,29 +161,28 @@
 # fun_name()
 # fun_name(z = p, y = q, x = r)
 
+
+
 # VARIBALE LENGTH KEYWORD ARUMENT-----------------------------
 
-  
-# def fun_name(**kwargs):
-#     print(kwargs)
-#     print(type(kwargs))
-# fun_name(**eval(input("enter any dist:")))
+def fun_name(**kwargs):
+    print(kwargs)
+    print(type(kwargs))
+fun_name(**eval(input("enter any dist:")))
 
 
 # ex :
 # def fun_name(**kwargs):
-    # for i in kwargs.keys():
-    #     print(i)
+#     for i in kwargs.keys():
+#         print(i)
     
-    # for i in kwargs.values():
-    #     print(i)
+#     for i in kwargs.values():
+#         print(i)
     
 #     for i ,j in kwargs.items():
 #         print('key=',i , 'values =' ,j)
 
 # fun_name(x = 10 , y = 20, z = 67, p = 67, q = 45)
-
-
 
 
 # ALL ARGUMENT PARAMETER
